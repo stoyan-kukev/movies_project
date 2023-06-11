@@ -6,13 +6,6 @@
 	import type { LayoutData } from './$types'
 
 	export let data: LayoutData
-
-	$: {
-		console.log($page.url.pathname)
-		if ($page.url.pathname == '/') {
-			console.log('at home')
-		}
-	}
 </script>
 
 <div class="navbar bg-base-100">
